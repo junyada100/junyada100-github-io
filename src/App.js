@@ -1,12 +1,124 @@
 import React, { Component } from 'react';
 import './App.css';
-import SideNav from './nav/SideNav.js';
+// import SideNav from './nav/SideNav.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      scroll_to_topic: ''
+    }
+    this.handleMenuClick = this.handleMenuClick.bind(this);
+  }
+  handleMenuClick(event) {
+    event.preventDefault();
+    window.scrollTo(500, 330);
+    this.setState({
+      scroll_to_topic: event.target.getAttribute("href")
+    });
+  }
   render() {
     return (
+    <div className="container">
+      <div className="container-menu">
+	      <img className="profile-pic" src="img/profile.jpg" alt="my profile pic" />
+        <ul>
+          <li>
+            <a href="#aboutme">about me</a>
+          </li>
+          <li>
+            <a href="#aboutme">projects</a>
+          </li>
+          <li>
+            <a href="#aboutme">about me</a>
+          </li>
+          <li>
+            <a href="#aboutme">about me</a>
+          </li>
+        </ul>
+      </div>
+      <div className="container-content">
+        <section id="about">
+          <div className="my-auto">
+            <h1>jun<span className="color-pink">yada</span></h1>
+            <a href="mailto:junyada@outlook.com" className="color-pink"><i className="socicon-mail" />junyada@outlook.com</a>
+            <p>Programmer, Software Tester, Gamer</p>
+<a href="#a"><i className="socicon-github icon-circle"></i></a>
+<a href="#a"><i className="socicon-github"></i></a>
+
+                <ul className="list-inline list-social-icons mb-0">
+                  <li className="list-inline-item">
+                    <a href="#a"><i className="socicon-github"></i></a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="#b">
+                      <span className="fa-stack fa-lg">
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="#c">
+                      <span className="fa-stack fa-lg">
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                  <li className="list-inline-item">
+                    <a href="#d">
+                      <span className="fa-stack fa-lg">
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fa fa-github fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+
+      Graphics by: <a target="_blank" rel="noopener noreferrer" href="https://www.vecteezy.com">Vecteezy.com</a>
+      </div>
+    </div>
+    );
+  }
+  renderx() {
+    return (
       <div>
-        <SideNav />
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a className="navbar-brand js-scroll-trigger" href="#page-top">
+	        <span className="d-block d-lg-none">junyada100's portfolio</span>
+	        <span className="d-none d-lg-block">
+	          <img className="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="" />
+	        </span>
+	      </a>
+	      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	        <span className="navbar-toggler-icon"></span>
+	      </button>
+	      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+	        <ul className="navbar-nav">
+	          <li className="nav-item">
+	            <a className="nav-link " href="#about" onClick={this.handleMenuClick}>About</a>
+	          </li>
+	          <li className="nav-item">
+	            <a className="nav-link js-scroll-trigger" href="#experience" onClick={this.handleMenuClick}>Experience</a>
+	          </li>
+	          <li className="nav-item">
+	            <a className="nav-link js-scroll-trigger" href="#education" onClick={this.handleMenuClick}>Education</a>
+	          </li>
+	          <li className="nav-item">
+	            <a className="nav-link js-scroll-trigger" href="#skills" onClick={this.handleMenuClick}>Skills</a>
+	          </li>
+	          <li className="nav-item">
+	            <a className="nav-link js-scroll-trigger" href="#interests" onClick={this.handleMenuClick}>Interests</a>
+	          </li>
+	          <li className="nav-item">
+	            <a className="nav-link js-scroll-trigger" href="#awards" onClick={this.handleMenuClick}>Awards</a>
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
         <div className="container-fluid p-0">
 
             <section className="resume-section p-3 p-lg-5 d-flex d-column" id="about">
@@ -15,12 +127,12 @@ class App extends Component {
                   <span className="text-primary">yada</span>
                 </h1>
                 <div className="subheading mb-5">
-                  <a href="mailto:name@email.com">junyada@outlook.com</a>
+                  <a href="mailto:name@email.com">junyada100@outlook.com</a>
                 </div>
-                <p className="mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+                <p className="mb-5">I am experienced in delivering software quality assurance for enterprise applications, developing test plan and execute the tests align with business requirements for both tecnical and business perspective.</p>
                 <ul className="list-inline list-social-icons mb-0">
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="#a">
                       <span className="fa-stack fa-lg">
                         <i className="fa fa-circle fa-stack-2x"></i>
                         <i className="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -28,7 +140,7 @@ class App extends Component {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="#b">
                       <span className="fa-stack fa-lg">
                         <i className="fa fa-circle fa-stack-2x"></i>
                         <i className="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -36,7 +148,7 @@ class App extends Component {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="#c">
                       <span className="fa-stack fa-lg">
                         <i className="fa fa-circle fa-stack-2x"></i>
                         <i className="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -44,7 +156,7 @@ class App extends Component {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="#d">
                       <span className="fa-stack fa-lg">
                         <i className="fa fa-circle fa-stack-2x"></i>
                         <i className="fa fa-github fa-stack-1x fa-inverse"></i>

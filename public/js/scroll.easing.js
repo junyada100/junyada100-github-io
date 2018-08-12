@@ -1,5 +1,5 @@
 !function(e) {
-  e('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  e('a.js-scroll-trigger').click(function() {alert('aa');
     if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
       var t = e(this.hash);
       if ((t = t.length ? t : e("[name=" + this.hash.slice(1) + "]")).length) return e("html, body").animate({
