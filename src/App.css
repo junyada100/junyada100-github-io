@@ -34,11 +34,14 @@
     flex-direction: row;
   }
   .container-menu {
-    min-width: 17rem;
+    width: 17rem;
     height: 100vh;
     padding-top: 0rem;
+    position: fixed;
+    left: 0px;
   }
   .container-content {
+    margin-left: 17rem;
     width: 100%;
   }
 }
@@ -48,6 +51,7 @@ body {
   font-size: 1.2rem;
 }
 section {
+  padding-bottom: 5rem;
   border-bottom: 1px solid #EAE3EA;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -56,6 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 2.5rem;
+}
+a {
+  text-decoration: none;
 }
 .profile-pic {
   border-radius: 50%;
@@ -66,8 +73,38 @@ h1 {
 .color-pink {
   color: #F64C72;
 }
-.icon-circle {
-  background: #ffc0c0;
-  padding:30px;
-  border-radius: 50%;
+.color-white {
+  color: #EAE3EA;
 }
+.inline-i-middle {
+  display: inline-block;
+}
+.inline-i-middle i {
+  vertical-align: middle;
+}
+.icon-inline {
+  list-style: none;
+  padding: 0;
+}
+.icon-inline li {
+  text-decoration: none;
+  background: #F64C72;
+  padding: .8rem;
+  border-radius: 50%;
+  display: inline;
+  margin-right: 1rem;
+}
+.icon-inline a {
+  color: #343a40;
+}
+.icon-inline i {
+  vertical-align: middle;
+  padding-bottom: .2rem;
+}
+.icon-inline li:hover a {
+  color: white;
+}
+
+
+
+
