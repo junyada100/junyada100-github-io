@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-// import SideNav from './nav/SideNav.js';
 
 class App extends Component {
   constructor(props) {
@@ -57,15 +56,15 @@ class App extends Component {
         <section id="projects">
           <div>
             <h2>projects</h2>
-            <p>Coming soon...</p>
-            <p>Coming soon...</p>
-            <p>Coming soon...</p>
-            <p>Coming soon...</p>
+            <h3>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/VaultExpress/the-vault">the-vault</a>
+            </h3>
+            <p>A simply secure sign-up/sign-in implementation for web app. You may consider this as runnable guideline for your implementation.</p>
           </div>
         </section>
         <section id="license">
           <div>
-            <h2><span className="color-pink">license</span></h2>
+            <h2><span className="color-pinkx">license</span></h2>
             Social Icons by: <a target="_blank" rel="noopener noreferrer" href="http://socicon.com">socicon</a>
             <br />
             favicon/Graphics by: <a target="_blank" rel="noopener noreferrer" href="https://www.vecteezy.com">Vecteezy.com</a>
