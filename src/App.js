@@ -29,6 +29,9 @@ class App extends Component {
             <a href="#projects">projects</a>
           </li>
           <li>
+            <a href="#contributes">contributes</a>
+          </li>
+          <li>
             <a href="#license">license</a>
           </li>
         </ul>
@@ -60,6 +63,12 @@ class App extends Component {
               <a target="_blank" rel="noopener noreferrer" href="https://github.com/VaultExpress/vault-express">vault-express</a>
             </h3>
             <p>A simply secure sign-up/sign-in implementation for web app. You may consider this as runnable guideline for your implementation.</p>
+          </div>
+        </section>
+        <section id="contributes">
+          <div>
+            <h2>contributes</h2>
+            <p>coming soon ..</p>
           </div>
         </section>
         <section id="license">
