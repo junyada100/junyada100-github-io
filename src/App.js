@@ -68,7 +68,10 @@ class App extends Component {
         <section id="contributes">
           <div>
             <h2>contributes</h2>
-            <p>coming soon ..</p>
+            <h3>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/willybeans/Teacher_app">Teacher_app</a>
+            </h3>
+            <p>A small app for private music teachers to use to document student progress and learning materials</p>
           </div>
         </section>
         <section id="license">
