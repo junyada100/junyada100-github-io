@@ -60,7 +60,7 @@ class App extends Component {
           <div>
             <h2>projects</h2>
             <h3>
-              <a target="_blank" rel="noopener noreferrer" href="https://github.com/VaultExpress/vault-express">vault-express</a>
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/VaultExpress/vault-express"><img className="project-pic" src="img/vault.png" alt="vault.png" height="30" />vault-express</a>
             </h3>
             <p>A simply secure sign-up/sign-in implementation for web app. You may consider this as runnable guideline for your implementation.</p>
           </div>

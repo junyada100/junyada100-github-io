@@ -75,6 +75,10 @@ a:hover {
   width: 8rem;
   height: 8rem;
 }
+.project-pic {
+  vertical-align: middle;
+  padding-right: 10px;
+}
 .color-pink {
   color: #F64C72;
 }
